@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Steganography Challenge</title>
+  <link rel="stylesheet" href="Cyber_detective_den_stego.css">
+</head>
+<body>
+<!-- Cyber Grid Animation -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<!-- Challenge Container -->
+<div class="container">
+  <h1 class="main-title">Challenge 3: Steganography</h1>
+  <div class="challenge-container">
+    <p>This meme has a hidden message. Can you find it?</p>
+    <img src="stegno_challenge.jpg" alt="Meme Image" class="challenge-image">
+    <p class="hint">Hint: Use a steganography tool to extract the hidden message.</p>
+    <input type="text" id="flagInput" class="cyber-input" placeholder="Enter the hidden flag">
+    <button onclick="checkFlag()" class="challenge-btn">Submit</button>
+    <p id="result" class="result-text"></p>
+  </div>
+</div>
+
+<script src="Cyber_detective_den_stego.js"></script>
+</body>
+</html>

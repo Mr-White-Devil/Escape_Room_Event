@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware Decryption</title>
+    <link rel="stylesheet" href="Cyber_detective_den_ransom.css">
+</head>
+<body>
+<!-- Cyber Grid Animation -->
+<div class="grid">
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+    <div class="grid-box"></div>
+</div>
+
+<!-- Challenge Container -->
+<div class="container">
+    <h1 class="challenge-title">Challenge 4:Ransomware Decryption</h1>
+    <p>A simulated ransomware attack has encrypted a message. Can you decrypt it?</p>
+
+    <!-- Encrypted Message -->
+    <pre class="encrypted-message">
+            U2FsdGVkX1+Q1r/M6YZ5sLNhq1YgGSoGlzE0dmTQpoo=
+        </pre>
+    <!---Correct decryption key   CyberDetective2025 --->
+
+    <!-- Hint -->
+    <p class="hint">Hint: Use AES-256 decryption with the correct passphrase.</p>
+
+    <!-- Input Area -->
+    <div class="input-area">
+        <input type="text" id="ransomware-key" class="cyber-input" placeholder="Enter the decryption key">
+        <button onclick="checkDecryption()" class="challenge-btn">Decrypt</button>
+    </div>
+
+    <!-- Result -->
+    <p id="ransomware-result" class="result-text"></p>
+
+    <!-- Back Button -->
+    <a href="cyber_detectives_den.html" class="back-btn">Back to Challenges</a>
+</div>
+
+<script src="Cyber_detective_den_ransom.js"></script>
+</body>
+</html>

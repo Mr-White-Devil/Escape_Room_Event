@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story 1: The Encrypted USB</title>
+  <link rel="stylesheet" href="Story_style.css">
+</head>
+<body>
+
+<div class="story-container">
+  <h1>Story 1: The Encrypted USB</h1>
+  <p class="story-text">
+    While investigating a cybercrime case, you find a mysterious USB drive labeled **"CONFIDENTIAL"**.
+    You plug it into your forensic workstation, and a message appears on the screen:
+    <b>"Solve the encryption riddle to unlock the secrets."</b>
+  </p>
+
+  <button id="downloadFile">Download USB Data</button>
+
+  <div class="quiz-box">
+    <p><b>Question:</b> The USB's password hint is: "The most widely used hashing algorithm for password storage."
+      What is it?</p>
+    <label for="answer1"></label>
+    <input type="text" id="answer1" placeholder="Enter your answer...">
+    <button id="submit1">Submit</button>
+    <p id="result1"></p>
+  </div>
+</div>
+
+<button id="nextStory"  class = "next-story">Go to Next Story</button>
+
+<script src="Story_Progression_1.js"></script>
+</body>
+</html>

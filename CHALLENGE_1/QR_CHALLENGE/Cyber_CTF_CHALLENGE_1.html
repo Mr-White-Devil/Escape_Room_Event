@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber CTF - QR Challenge</title>
+  <link rel="stylesheet" href="Cyber_CTF_Challenge_1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="/account.js"></script>
+  <script src="/server.js"></script>
+</head>
+<body>
+
+<!-- Floating Sci-Fi Boxes -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<!-- Title -->
+<h1 class="main-title">QR Code Challenge</h1>
+
+<!-- Challenge Grid -->
+<div class="challenge-grid">
+
+  <!-- QR Challenge Section -->
+  <div class="challenge">
+    <p>Scan the QR code below and enter the correct flag to complete this challenge.</p>
+
+    <!-- QR Code Generator -->
+    <div id="qrcode"></div>
+
+    <!-- Cyber-styled input field -->
+    <label for="qr-input"></label>
+    <input type="text" id="qr-input" class="cyber-input" placeholder="Enter QR flag">
+    <button id="submit-button" class="challenge-link">Submit</button>
+    <p id="qr-result"></p>
+
+    <!-- Score Display -->
+    <h3>Current Score: <span id="score">0</span></h3>
+  </div>
+
+</div>
+
+<script src="Cyber_CTF_Challenge_1.js"></script>
+</body>
+</html>

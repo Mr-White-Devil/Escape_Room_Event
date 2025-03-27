@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber CTF - USB Challenge</title>
+  <link rel="stylesheet" href="Cyber_CTF_Challenge_2.css">
+</head>
+<body>
+
+<!-- Floating Sci-Fi Boxes -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+
+<div class="container">
+  <h1 class="main-title">USB File Extraction Challenge</h1>
+  <p>Download the challenge files and extract the correct flag!</p>
+
+  <!-- Download Challenge Files -->
+  <button class="cyber-button" onclick="generateChallengeFiles()">Download Challenge Files</button>
+
+  <!-- Hint Feature -->
+  <button class="cyber-button" onclick="revealHint()">Get Hint</button>
+  <p id="hint" class="hint-text" style="display: none;">Ask the volunteers who made the backend... maybe my name gives a clue? 🤔</p>
+
+  <!-- Input Field for Flag Submission -->
+  <p>Submit the flag after extraction:</p>
+  <input type="text" id="flag-input" class="cyber-input" placeholder="Enter flag here">
+  <button id="submit-btn" class="cyber-button" onclick="checkFlag()">Submit</button>
+
+  <!-- Result Display -->
+  <p id="result"></p>
+
+  <!-- Score Display -->
+  <h3>Current Score: <span id="score">0</span></h3>
+</div>
+
+<script src="Cyber_CTF_Challenge_2.js"></script>
+</body>
+</html>

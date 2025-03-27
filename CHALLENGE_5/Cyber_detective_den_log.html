@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log Analysis Mystery</title>
+  <link rel="stylesheet" href="Cyber_detective_den_log.css">
+</head>
+<body>
+<!-- Cyber Grid Animation -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<div class="container">
+  <h1 class="challenge-title">Challenge 5:Log Analysis Mystery</h1>
+  <p class="challenge-description">A hacker tried to infiltrate the system. Analyze the log file to find the suspicious IP.</p>
+
+  <div class="log-container">
+            <pre class="log-file">
+<span class="log-timestamp">[2025-03-10 12:45:32]</span> Login attempt from <span class="ip-address">192.168.1.20</span> - <span class="success">SUCCESS</span>
+<span class="log-timestamp">[2025-03-10 12:47:10]</span> Login attempt from <span class="ip-address">203.120.45.6</span> - <span class="failed">FAILED</span>
+<span class="log-timestamp">[2025-03-10 12:50:15]</span> Login attempt from <span class="ip-address">192.168.1.23</span> - <span class="success">SUCCESS</span>
+<span class="log-timestamp">[2025-03-10 12:55:07]</span> Login attempt from <span class="ip-address suspicious">85.214.132.89</span> - <span class="failed">FAILED</span>
+<span class="log-timestamp">[2025-03-10 13:00:05]</span> Login attempt from <span class="ip-address">192.168.1.25</span> - <span class="success">SUCCESS</span>
+            </pre>
+  </div>
+
+  <div class="input-area">
+    <label for="log-answer"></label><input type="text" id="log-answer" class="cyber-input" placeholder="Enter suspicious IP">
+    <button onclick="checkLogIP()" class="challenge-btn">Analyze</button>
+  </div>
+
+  <p id="log-result" class="result-text"></p>
+
+  <a href="Cyber_detectives_den.html" class="back-btn">Back to Challenges</a>
+</div>
+
+<script src="Cyber_detective_den_log.js"></script>
+</body>
+</html>

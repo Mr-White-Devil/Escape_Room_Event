@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Breach Challenge</title>
+    <link rel="stylesheet" href="firewall_breach.css">
+</head>
+<body>
+
+<div class="puzzle">
+    <h2>Firewall Breach Challenge</h2>
+    <p>Configure the firewall rules to block malicious traffic while allowing secure traffic.</p>
+    <pre>
+ALLOW *:* -> 192.168.1.1:*
+BLOCK 0.0.0.0/0 -> 192.168.1.1:22
+        </pre>
+    <p>Drag and drop the rules in the correct order:</p>
+
+    <ul id="firewall-rules">
+        <li class="draggable" draggable="true" id="rule1">ALLOW 192.168.1.1:80 -> *:*</li>
+        <li class="draggable" draggable="true" id="rule2">BLOCK 0.0.0.0/0 -> 192.168.1.1:22</li>
+    </ul>
+
+    <button onclick="checkFirewall()">Submit</button>
+    <p id="firewall-result"></p>
+</div>
+
+<script src="firewall_breach.js"></script>
+</body>
+</html>

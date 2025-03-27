@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber CTF - Story Progression</title>
+  <link rel="stylesheet" href="Story_Progression.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Cyber CTF: The Hunt for Phantom</h1>
+  <p>Select a story mission to begin:</p>
+
+  <div class="missions">
+    <button onclick="startStory('Story_Progression_1.html')">🔍 Mission 1: The Encrypted USB</button>
+    <button onclick="startStory('Story_Progression_2.html')">📂 Mission 2: The Suspicious Image</button>
+  </div>
+
+  <p class="progress-info">Complete challenges to unlock more missions!</p>
+</div>
+<script>
+  function startStory(page) {
+    window.location.href = page; // Redirect to the selected story page
+  }
+</script>
+
+<script src="Story_Progression.js"></script>
+</body>
+</html>

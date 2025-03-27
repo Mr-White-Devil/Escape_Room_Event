@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Message Challenge</title>
+  <link rel="stylesheet" href="Cyber_detective_den_inspect.css">
+</head>
+<body>
+<!-- Cyber Grid Animation -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<!-- Challenge Container -->
+<div class="container">
+  <h1 class="main-title">Challenge 1: Hidden Message</h1>
+  <div class="challenge-container">
+    <p>There is a secret hidden somewhere in this page. Can you find it?</p>
+    <input type="text" id="flagInput" class="cyber-input" placeholder="Enter the flag">
+    <button onclick="checkFlag()" class="challenge-btn">Submit</button>
+    <p id="result" class="result-text"></p>
+  </div>
+</div>
+
+<!-- Hidden Flag -->
+<p style="display: none;">Flag: {hidden_message_detected}</p>
+
+<script src="Cyber_detective_den_inspect.js"></script>
+</body>
+</html>

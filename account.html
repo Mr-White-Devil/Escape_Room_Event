@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <script src="account.js" defer></script>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+<h2>User Authentication</h2>
+
+<div id="auth-container">
+    <!-- Login Form -->
+    <div id="login-form">
+        <h3>Login</h3>
+        <input type="email" id="login-email" placeholder="Enter Email" required>
+        <input type="password" id="login-password" placeholder="Enter Password" required>
+        <button id="login-btn">Login</button>
+    </div>
+
+    <!-- Register Form -->
+    <div id="register-form">
+        <h3>Register</h3>
+        <input type="text" id="register-username" placeholder="Enter Username" required>
+        <input type="email" id="register-email" placeholder="Enter Email" required>
+        <input type="password" id="register-password" placeholder="Enter Password" required>
+        <button id="register-btn">Register</button>
+    </div>
+
+    <!-- Logout Section (Visible After Login) -->
+    <div id="logout-section" style="display:none;">
+        <h3>Welcome, <span id="user-name"></span>!</h3>
+        <a href="dashboard.html" class="dashboard-link">Go to Dashboard</a>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+
+    <a href="index.html" class="main-page">RETURN BACK TO MAIN PAGE</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing Email Investigation</title>
+  <link rel="stylesheet" href="phishing_investigation.css">
+</head>
+<body>
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<div class="puzzle">
+  <h2 class="main-title">Phishing Email Investigation</h2>
+  <p>Is this email real or a phishing attempt? Look for red flags!</p>
+
+  <div class="email cyber-box">
+    <p><strong>From:</strong> support@paypall.com</p>
+    <p><strong>Subject:</strong> Urgent! Your account is compromised!</p>
+    <p><strong>Body:</strong> Click <a href="http://secure-paypal-support.com" target="_blank" rel="noopener noreferrer">here</a> to verify your account.</p>
+  </div>
+
+  <p>Select the red flags:</p>
+  <form id="phishing-form" class="cyber-form">
+    <fieldset>
+      <legend>Red Flags</legend>
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="fake-domain"> Fake domain (Real Red Flag)
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="urgent-language"> Urgent language (Real Red Flag)
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="suspicious-link"> Suspicious link (Real Red Flag)
+      </label>
+
+      <!-- GIBBERISH OPTIONS -->
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="email-uses-words"> Email uses words
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="sent-on-monday"> Sent on a Monday
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="has-email-address"> Contains an email address
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="subject-line"> Subject line is too long
+      </label>
+
+      <label class="cyber-checkbox">
+        <input type="checkbox" name="flag" value="written-in-english"> Email is written in English
+      </label>
+    </fieldset>
+    <button type="submit" class="cyber-button">Submit</button>
+  </form>
+
+  <p id="phishing-result" aria-live="polite"></p>
+</div>
+
+<div class="challenge locked">
+  <a href="password_cracking.html" class="challenge-link" id="next-challenge">Proceed to Next</a>
+</div>
+
+<script src="phishing_investigation.js"></script>
+</body>
+</html>

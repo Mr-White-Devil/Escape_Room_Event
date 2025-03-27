@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Engineering Trap</title>
+  <link rel="stylesheet" href="social_engineering.css">
+</head>
+<body>
+<div class="puzzle">
+  <h2>Social Engineering Trap</h2>
+  <p>What do you do if someone claiming to be IT support asks for your password?</p>
+  <form id="social-engineering-form">
+    <label for="give"><input type="radio" id="give" name="response" value="give"> Give them the password</label><br>
+    <label for="verify"><input type="radio" id="verify" name="response" value="verify"> Ask for verification</label><br>
+    <label for="ignore"><input type="radio" id="ignore" name="response" value="ignore"> Ignore the call</label><br>
+    <label for="troll"><input type="radio" id="troll" name="response" value="troll"> Ask for *their* password instead</label><br>
+    <label for="panic"><input type="radio" id="panic" name="response" value="panic"> Panic and throw your laptop out the window</label><br>
+    <label for="challenge"><input type="radio" id="challenge" name="response" value="challenge"> Challenge them to a hacking duel</label><br>
+    <button type="button" onclick="checkResponse()">Submit</button>
+  </form>
+  <p id="social-engineering-result"></p>
+</div>
+
+<div class="challenge">
+  <a href="ransomware_lockdown.html" class="challenge-link">Proceed to Next</a>
+</div>
+
+<script src="social_engineering.js"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+/* General Styling */
+body {
+    font-family: "Bell MT", "Times New Roman", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #050A18, #020617, #0B0F2D);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+/* Title */
+.main-title {
+    font-size: 3.5em;
+    margin-top: 50px;
+    color: #00E6E6;
+    text-shadow: 0 0 15px #00E6E6, 0 0 30px #004D99;
+}
+
+/* Quiz Container */
+.quiz-container {
+    width: 90%;
+    max-width: 600px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Question Block */
+.question-block {
+    background: rgba(0, 50, 100, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Quiz Question */
+.quiz-question {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00E6E6;
+    text-shadow: 0 0 5px #004D99;
+}
+
+/* Input Field (Brighter with Red & Blue Glow) */
+.cyber-input {
+    width: 80%;
+    padding: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    background: rgba(15, 40, 80, 0.8);
+    border: 2px solid #00E6E6;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 50, 100, 0.6), 0 0 12px rgba(0, 200, 255, 0.4);
+    color: white;
+}
+
+.cyber-input::placeholder {
+    color: rgba(200, 220, 255, 0.7);
+}
+
+/* Buttons */
+.cyber-button {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.cyber-button:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+    color: black;
+}
+
+.cyber-button-next{
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s;
+    position: absolute;
+    transform: translateX(45%) translateY(500px);
+}
+.cyber-button-next:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+    color: black;
+}
+/* Lighter Hint Section */
+.hint-section {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.hint-text {
+    display: none;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #FFB432;
+    border-radius: 8px;
+    text-shadow: 0 0 5px #FF3264;
+    font-size: 1.1em;
+}
+
+/* Brighter Reveal Hint Button */
+.hint-btn {
+    background: linear-gradient(135deg, #FFB432, #FF3264);
+    color: black;
+    box-shadow: 0 0 8px rgba(255, 180, 50, 0.6);
+}
+
+.hint-btn:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+}
+
+/* Meme Container */
+.meme-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.meme-img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+/* Cyber Grid Animation */
+.grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Floating Sci-Fi Boxes */
+.grid-box {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 200, 255, 0.1);
+    border: 1px solid rgba(0, 200, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.4);
+    position: absolute;
+    animation: floatBox 6s infinite alternate ease-in-out;
+    border-radius: 5px;
+}
+
+/* Randomized Box Positions */
+.grid-box:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
+.grid-box:nth-child(2) { top: 40%; left: 50%; animation-delay: 1s; }
+.grid-box:nth-child(3) { top: 70%; left: 30%; animation-delay: 2s; }
+.grid-box:nth-child(4) { top: 20%; left: 80%; animation-delay: 3s; }
+.grid-box:nth-child(5) { top: 60%; left: 10%; animation-delay: 4s; }
+.grid-box:nth-child(6) { top: 80%; left: 60%; animation-delay: 5s; }
+
+/* Box Animation */
+@keyframes floatBox {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-20px) translateX(10px);
+        opacity: 1;
+    }
+}
+
+/* Challenge Grid */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    width: 85%;
+    max-width: 800px;
+    margin-top: 50px;
+}

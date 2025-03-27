@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake App Trap</title>
+  <link rel="stylesheet" href="fake_app_trap.css">
+</head>
+<body>
+<div class="puzzle">
+  <h2>Fake App Trap</h2>
+  <p>Which of these app permissions is unnecessary for a legitimate app?</p>
+  <form id="fake-app-form">
+    <div class="options">
+      <label><input type="checkbox" name="permission" value="camera"> Camera (Taking photos)</label>
+      <label><input type="checkbox" name="permission" value="microphone"> Microphone (Voice recording)</label>
+      <label><input type="checkbox" name="permission" value="contacts"> Contacts (Syncing phonebook)</label>
+      <label><input type="checkbox" name="permission" value="sms"> SMS (Reading messages)</label>
+      <label><input type="checkbox" name="permission" value="toaster"> Toaster (Sending heat signals) 🫠</label>
+      <label><input type="checkbox" name="permission" value="refrigerator"> Refrigerator (Cooling data) 🧊</label>
+      <label><input type="checkbox" name="permission" value="quantum-tunnel"> Quantum Tunnel (Teleporting files) ⚛️</label>
+    </div>
+    <button type="button" onclick="checkFakeApp()">Submit</button>
+  </form>
+  <p id="fake-app-result"></p>
+</div>
+
+
+<script src="fake_app_trap.js"></script>
+</body>
+</html>

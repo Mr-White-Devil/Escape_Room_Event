@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: "Bell MT", "Times New Roman", sans-serif;
+    background: radial-gradient(circle, #050A18, #020617, #0B0F2D);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Puzzle Container */
+.puzzle {
+    background: rgba(10, 10, 30, 0.9);
+    border: 2px solid #00E6E6;
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Title */
+.puzzle h2 {
+    font-size: 2em;
+    color: #00E6E6;
+    text-shadow: 0 0 10px #00E6E6, 0 0 20px #004D99;
+}
+
+/* Firewall Rules List */
+#firewall-rules {
+    list-style: none;
+    padding: 0;
+    background: rgba(20, 20, 50, 0.8);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Draggable Items */
+.draggable {
+    background: linear-gradient(135deg, #002244, #004D99);
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #00E6E6;
+    border-radius: 8px;
+    cursor: grab;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 0 0 5px rgba(0, 200, 255, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.draggable:hover {
+    background: linear-gradient(135deg, #003366, #0055aa);
+}
+
+/* Active Dragging Effect */
+.dragging {
+    opacity: 0.5;
+    border: 2px dashed #FF3264;
+}
+
+/* Code Block */
+pre {
+    background: rgba(0, 50, 100, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #00E6E6;
+    text-align: left;
+    white-space: pre-wrap;
+    font-size: 1em;
+}
+
+/* Submit Button */
+button {
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 15px;
+    text-shadow: 0 0 5px #00E6E6;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+    color: black;
+}
+
+/* Result Message */
+#firewall-result {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #FFB432;
+}
+
+

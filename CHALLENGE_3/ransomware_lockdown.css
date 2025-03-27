@@ -1,0 +1,136 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: "Orbitron", sans-serif;
+    background: radial-gradient(circle, #040A18, #010512, #090C24);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Puzzle Box */
+.puzzle {
+    background: rgba(20, 20, 50, 0.95);
+    border: 2px solid #00f2ff;
+    box-shadow: 0 0 25px rgba(0, 242, 255, 0.7);
+    padding: 20px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 480px;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.puzzle:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 242, 255, 0.9);
+}
+
+/* Title */
+.puzzle h2 {
+    font-size: 2em;
+    color: #00f2ff;
+    text-shadow: 0 0 12px #00f2ff, 0 0 25px #0055aa;
+    margin-bottom: 10px;
+}
+
+/* Decryption Code */
+pre {
+    background: rgba(0, 60, 120, 0.25);
+    padding: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #00f2ff;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Input Field */
+input {
+    background: rgba(0, 0, 60, 0.85);
+    color: #00f2ff;
+    border: 2px solid #00f2ff;
+    padding: 14px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 85%;
+    margin: 12px 0;
+}
+
+input:focus {
+    border-color: cyan;
+    box-shadow: 0 0 14px cyan;
+}
+
+/* Cyberpunk Submit Button */
+button {
+    display: inline-block;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    background: linear-gradient(135deg, #ff3264, #ffb432);
+    color: black;
+    border-color: #ff3264;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 50, 100, 0.9);
+}
+
+/* Active Click Effect */
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 30px rgba(255, 50, 100, 1);
+}
+
+/* Disabled Button */
+button:disabled {
+    background: rgba(128, 128, 128, 0.5);
+    color: #ccc;
+    border-color: rgba(128, 128, 128, 0.8);
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Result Message */
+#ransomware-result {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #00E6E6;
+}
+
+/* Challenge Link */
+.challenge-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.challenge-link:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+    color: black;
+}

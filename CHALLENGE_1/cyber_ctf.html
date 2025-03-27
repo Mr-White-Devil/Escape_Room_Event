@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber CTF Challenge</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- Top Left Progress Graph -->
+<div class="progress-container">
+    <canvas id="progressChart"></canvas>
+</div>
+
+<!-- Title -->
+<h1 class="main-title">Cyber CTF Challenge</h1>
+<h2 id="phase-display">SELECT A CHALLENGE :</h2>
+
+<!-- Score Display -->
+<div class="score-container">
+    <h3>Current Score: <span id="score">0</span></h3>
+</div>
+
+<!-- Challenge Grid -->
+<div class="challenge-grid">
+
+    <div class="challenge">
+        <h2>QR Code Challenge</h2>
+        <p>Scan a QR code and enter the correct flag to proceed.</p>
+        <a href="QR_CHALLENGE/Cyber_CTF_CHALLENGE_1.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>USB File Upload Challenge</h2>
+        <p>Upload a text file containing the correct flag to complete the challenge.</p>
+        <a href="USB_CHALLENGE/Cyber_CTF_Challenge_2.html" class="challenge-link">Start</a>
+    </div>
+</div>
+
+<!-- Hidden File Input for QR Scanning -->
+<input type="file" id="qr-input" accept="image/*" style="display: none;">
+
+<div class="grid"></div>
+<div class="scan-line"></div>
+<div class="circuit" style="top: 30%; left: 20%;"></div>
+<div class="circuit" style="top: 60%; left: 70%;"></div>
+
+<!-- JavaScript -->
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="timer.js"></script>
+    <script src="account.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Account & Login Status -->
+<div id="account-container">
+    <a href="account.html" class="your-account">YOUR ACCOUNT</a>
+    <span id="profile-status">Not Logged In</span> <!-- Profile Status Indicator -->
+</div>
+
+<!-- Progress Graph -->
+<div class="progress-container">
+    <canvas id="progressChart"></canvas>
+</div>
+
+<!-- Title -->
+<h1 class="main-title">ESCAPE ROOM</h1>
+<h2>DEPARTMENT OF CYBER SECURITY PRESENTS</h2>
+
+<!-- Timer and Challenge Buttons -->
+<div class="top-right-container">
+    <p id="timer-display" class="timer-top-right">⏳ Timer: 00:00</p>
+    <button id="start-challenge" class="challenge-button" onclick="startTimer()">Start Challenge</button>
+    <button id="end-challenge" class="challenge-button end-button" onclick="stopTimer()">End Challenge</button>
+</div>
+
+<!-- Challenge Grid -->
+<div class="challenge-grid" id="challengeGrid">
+    <div class="challenge">
+        <h2>Cyber-Themed CTF</h2>
+        <p>Uncover digital/physical flags (QR codes, USB drives) while stopping a cyber attack.</p>
+        <p>Total Points: 300</p>
+        <a href="CHALLENGE_1/cyber_ctf.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Hybrid Meme Quiz</h2>
+        <p>Use hints and memes to find answers for the quiz.</p>
+        <p>Total Points: 150</p>
+        <a href="CHALLENGE_2/Hybrid_Meme_Quiz.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Black Hat</h2>
+        <p>Core Cyber Security Challenges.</p>
+        <p>Total Points: 450</p>
+        <a href="CHALLENGE_3/Black_Hat_Challenges.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Dynamic Story Progression</h2>
+        <p>Capture flags to influence the storyline and alter your mission's path.</p>
+        <p>Total Points: 350</p>
+        <a href="CHALLENGE_4/Story_Progression.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Cyber Detective’s Den</h2>
+        <p>Solve cybersecurity mysteries! Analyze phishing emails, configure firewalls, decrypt ransomware, and uncover hidden messages.</p>
+        <p>Total Points: 300</p>
+        <a href="CHALLENGE_5/cyber_detectives_den.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Code Cracker’s Playground</h2>
+        <p>Test your general CS skills! Decode binary messages, identify programming languages, and solve algorithmic puzzles.</p>
+        <p>Total Points: 250</p>
+        <a href="CHALLENGE_6/code_crackers_playground.html" class="challenge-link">Start</a>
+    </div>
+
+    <div class="challenge">
+        <h2>Game Zone Galore</h2>
+        <p>Take a break with fun game quizzes! Solve emoji puzzles, answer trivia, and crack riddles.</p>
+        <p>Total Points: 200</p>
+        <a href="CHALLENGE_7/game_zone_galore.html" class="challenge-link">Start</a>
+    </div>
+</div>
+</body>
+</html>

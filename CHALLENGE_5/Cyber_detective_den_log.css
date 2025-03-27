@@ -1,0 +1,198 @@
+/* Cyber_detective_den_log.css */
+/* Base styles from previous challenges */
+body {
+    font-family: "Bell MT", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #050A18, #020617, #0B0F2D);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-size: 400% 400%;
+    animation: cyberGlow 12s infinite alternate ease-in-out;
+    position: relative;
+    overflow-y: auto;
+}
+
+/* Grid animation styles (same as previous) */
+/* ... */
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: rgba(0, 50, 100, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 200, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(0, 200, 255, 0.4);
+}
+
+.log-container {
+    background: rgba(0, 30, 60, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 50, 100, 0.3);
+}
+
+.log-file {
+    font-family: 'Courier New', monospace;
+    text-align: left;
+    color: #00E6E6;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    padding: 15px;
+    margin: 0;
+}
+
+.log-timestamp {
+    color: #FF3264;
+}
+
+.ip-address {
+    color: #00E6E6;
+    text-shadow: 0 0 8px #00E6E6;
+}
+
+.success {
+    color: #00FF00;
+    text-shadow: 0 0 8px #00FF00;
+}
+
+.failed {
+    color: #FF3264;
+    text-shadow: 0 0 8px #FF3264;
+}
+
+.suspicious {
+    animation: suspiciousGlow 1.5s infinite alternate;
+}
+
+
+
+
+/* === Cyber Input Field === */
+.cyber-input {
+    width: 60%;
+    padding: 12px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #00E6E6;
+    background: rgba(0, 50, 100, 0.2);
+    border: 1px solid #00E6E6;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.4);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.cyber-input:focus {
+    background: rgba(0, 50, 100, 0.4);
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.8);
+    border-color: #FF3264;
+}
+
+/* === Challenge Button === */
+.challenge-btn {
+    padding: 15px 30px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 230, 230, 0.5);
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.5), 0 0 30px rgba(0, 77, 153, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+}
+
+.challenge-btn:hover {
+    background: linear-gradient(135deg, #8A2BE2, #FF1493); /* Purple to red gradient */
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.7), 0 0 50px rgba(255, 20, 147, 0.7);
+    transform: scale(1.05);
+    color: white;
+}
+
+.challenge-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(0, 230, 230, 0.5), 0 0 20px rgba(0, 77, 153, 0.5);
+}
+
+/* Glow Animation */
+.challenge-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    pointer-events: none;
+}
+
+.challenge-btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* === Back Button === */
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00E6E6, #004D99);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #FF3264, #FFB432);
+    color: black;
+}
+
+
+@keyframes suspiciousGlow {
+    from {
+        text-shadow: 0 0 5px #FF3264;
+    }
+    to {
+        text-shadow: 0 0 15px #FF3264, 0 0 30px #FF1493;
+    }
+}
+
+/* Input and button styles (same as previous challenges) */
+/* ... */
+
+.result-text {
+    margin-top: 20px;
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .log-file {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}

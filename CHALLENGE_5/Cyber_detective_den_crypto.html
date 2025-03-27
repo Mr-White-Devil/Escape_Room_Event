@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptography Challenge</title>
+  <link rel="stylesheet" href="Cyber_detective_den_crypto.css">
+</head>
+<body>
+<!-- Cyber Grid Animation -->
+<div class="grid">
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+  <div class="grid-box"></div>
+</div>
+
+<!-- Challenge Container -->
+<div class="container">
+  <h1 class="main-title">Challenge 2: Cryptography</h1>
+  <div class="challenge-container">
+    <p>Decode the following encoded message to find the hidden flag:</p>
+    <p class="encrypted-message">VGhlIGZsYWcgaXM6IGJhc2U2NF9kZWNvZGVfY2hhbGxlbmdl</p>
+    <p>Hint: "Man, this looks like gibberish... almost like it's **64 times better** than normal text!" 🤔😆</p>
+    <input type="text" id="flagInput" class="cyber-input" placeholder="Enter the decoded flag">
+    <button onclick="checkFlag()" class="challenge-btn">Submit</button>
+    <p id="result" class="result-text"></p>
+  </div>
+</div>
+
+<script src="Cyber_detective_den_crypto.js"></script>
+</body>
+</html>

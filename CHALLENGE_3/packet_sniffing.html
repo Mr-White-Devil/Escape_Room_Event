@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packet Sniffing Game</title>
+  <link rel="stylesheet" href="packet_sniffing.css">
+</head>
+<body>
+
+<div class="puzzle">
+  <h2>Packet Sniffing Game</h2>
+  <p>Find the hidden password in this simulated network packet:</p>
+  <pre class="packet">GET /login?user=admin&pass=supersecret</pre>
+
+  <label for="packet-password"></label><input type="text" id="packet-password" placeholder="Enter the password">
+  <button onclick="checkPacket()">Submit</button>
+  <p id="packet-result"></p>
+</div>
+
+<div class="challenge">
+  <a href="social_engineering.html" class="challenge-link">Proceed to Next</a>
+</div>
+
+<script src="packet_sniffing.js"></script>
+</body>
+</html>
